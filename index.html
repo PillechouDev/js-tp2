@@ -7,13 +7,16 @@
         <script src="index.js" defer></script>
     </head>
     <body>
-        <label for="amount">Entrez le montant</label>
-        <input type="text" name="amount" id="amount"><br>
-        <label for="eur">en €</label>
-        <input type="radio" name="devise" id="eur" value="eur"><br>
-        <label for="frf"> en FRF</label>
-        <input type="radio" name="devise" id="frf" value="frf"><br>
-        <button onclick="convert()">Convertir</button>
-        
+        <center>
+            <label for="amount">Entrez le montant</label>
+            <input type="number" name="amount" id="amount"><br>
+            <label for="eur">en €</label>
+            <input type="radio" name="devise" id="eur" value="eur"><br>
+            <label for="frf"> en FRF</label>
+            <input type="radio" name="devise" id="frf" value="frf"><br>
+            <button onclick="convert()">Convertir</button>
+            <div id="result"></div>
+        </center>
+       
     </body>
 </html>
