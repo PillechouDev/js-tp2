@@ -14,12 +14,12 @@ function convert(){
             console.log(valuer)
             a = valuer*0.15
             console.log(a)
-            result.innerText = `Resultat de FRF à € : ` +a
+            result.innerText = `Resultat de FRF à € : ` +a.toFixed(2)
             console.log('test')
         }
         else if (radiofrf.checked){
-            a= valuer*6.56
-            result.innerText = `Resultat de € à FRF : ` +a
+            a= valuer*6.55957 
+            result.innerText = `Resultat de € à FRF : ` +a.toFixed(2)
         }
         else{
             alert('Veuillez selectionnez une deivse')
